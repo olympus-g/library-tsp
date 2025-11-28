@@ -46,14 +46,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Book Forms\AddBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Book Forms\AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book Forms\DeleteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book Forms\DeleteBook.Designer.cs">
+      <DependentUpon>DeleteBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book Forms\EditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book Forms\EditBook.Designer.cs">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan Forms\AddLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan Forms\AddLoan.Designer.cs">
+      <DependentUpon>AddLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan Forms\DeleteLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan Forms\DeleteLoan.Designer.cs">
+      <DependentUpon>DeleteLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan Forms\EditLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan Forms\EditLoan.Designer.cs">
+      <DependentUpon>EditLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitor Forms\AddVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visitor Forms\AddVisitor.Designer.cs">
+      <DependentUpon>AddVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor Forms\DeleteVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visitor Forms\DeleteVisitor.Designer.cs">
+      <DependentUpon>DeleteVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor Forms\EditVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visitor Forms\EditVisitor.Designer.cs">
+      <DependentUpon>EditVisitor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Book Forms\AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book Forms\DeleteBook.resx">
+      <DependentUpon>DeleteBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book Forms\EditBook.resx">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Forms\AddLoan.resx">
+      <DependentUpon>AddLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Forms\DeleteLoan.resx">
+      <DependentUpon>DeleteLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Forms\EditLoan.resx">
+      <DependentUpon>EditLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +138,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Visitor Forms\AddVisitor.resx">
+      <DependentUpon>AddVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visitor Forms\DeleteVisitor.resx">
+      <DependentUpon>DeleteVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visitor Forms\EditVisitor.resx">
+      <DependentUpon>EditVisitor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

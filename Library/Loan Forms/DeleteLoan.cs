@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Library
+namespace Library.Loan_Forms
 {
-    public partial class Form1 : Form
+    public partial class DeleteLoan : Form
     {
-        public Form1()
+        public DeleteLoan()
         {
             InitializeComponent();
         }
