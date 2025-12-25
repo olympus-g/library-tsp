@@ -17,9 +17,29 @@ namespace Library
             InitializeComponent();
         }
 
-        private void AddBook_Load(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Book newBook = new Book();
+                newBook.InventoryNumber = int.Parse(txtInventory.Text);
+                newBook.Title = txtTitle.Text;
+                newBook.Author = txtAuthor.Text;
+                newBook.Year = int.Parse(txtYear.Text);
+                newBook.Genre = txtGenre.Text;
 
+                DatabaseHelper.AddBookToDb(newBook);
+
+                GlobalData.AllBooks.Add(newBook);
+                GlobalData.BookCatalog.Add(newBook.InventoryNumber, newBook);
+
+                MessageBox.Show("Book added successfully!");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

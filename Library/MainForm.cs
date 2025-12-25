@@ -18,6 +18,16 @@ namespace Library
         public MainForm()
         {
             InitializeComponent();
+
+            GlobalData.AllBooks = DatabaseHelper.LoadBooks();
+            GlobalData.BookCatalog.Clear();
+            foreach (var book in GlobalData.AllBooks)
+            {
+                if (!GlobalData.BookCatalog.ContainsKey(book.InventoryNumber))
+                {
+                    GlobalData.BookCatalog.Add(book.InventoryNumber, book);
+                }
+            }
         }
 
         private void btnAddBook_Click(object sender, EventArgs e)
@@ -73,5 +83,6 @@ namespace Library
             DeleteLoan deleteLoan = new DeleteLoan();
             deleteLoan.ShowDialog();
         }
+
     }
 }
