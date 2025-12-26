@@ -28,6 +28,9 @@ namespace Library
                     GlobalData.BookCatalog.Add(book.InventoryNumber, book);
                 }
             }
+
+            GlobalData.AllVisitors = DatabaseHelper.LoadVisitors();
+            GlobalData.AllLoans = DatabaseHelper.LoadLoans();
         }
 
         private void btnAddBook_Click(object sender, EventArgs e)
@@ -84,5 +87,9 @@ namespace Library
             deleteLoan.ShowDialog();
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

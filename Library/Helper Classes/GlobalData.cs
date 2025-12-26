@@ -12,5 +12,7 @@ namespace Library
         public static Dictionary<int, Book> BookCatalog = new Dictionary<int, Book>();
 
         public static List<Visitor> AllVisitors = new List<Visitor>();
+
+        public static List<Loan> AllLoans = new List<Loan>();
     }
 }

@@ -8,7 +8,7 @@ namespace Library
 {
     public class Loan
     {
-        public int BookInventoryNumber { get; set; }
+        public int BookID { get; set; }
         public string VisitorBarcode { get; set; }
         public DateTime LoanDate { get; set; }
         public DateTime ReturnDate { get; set; }

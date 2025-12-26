@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.txtEGN = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -70,32 +70,32 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Full Name:";
             // 
-            // textBox1
+            // txtBarcode
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Ivory;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(202, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 30);
-            this.textBox1.TabIndex = 3;
+            this.txtBarcode.BackColor = System.Drawing.Color.Ivory;
+            this.txtBarcode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarcode.Location = new System.Drawing.Point(202, 111);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(303, 30);
+            this.txtBarcode.TabIndex = 3;
             // 
-            // textBox2
+            // txtEGN
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Ivory;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(202, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(303, 30);
-            this.textBox2.TabIndex = 4;
+            this.txtEGN.BackColor = System.Drawing.Color.Ivory;
+            this.txtEGN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEGN.Location = new System.Drawing.Point(202, 155);
+            this.txtEGN.Name = "txtEGN";
+            this.txtEGN.Size = new System.Drawing.Size(303, 30);
+            this.txtEGN.TabIndex = 4;
             // 
-            // textBox3
+            // txtName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Ivory;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(202, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(303, 30);
-            this.textBox3.TabIndex = 5;
+            this.txtName.BackColor = System.Drawing.Color.Ivory;
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(202, 199);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(303, 30);
+            this.txtName.TabIndex = 5;
             // 
             // btnAdd
             // 
@@ -108,6 +108,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // AddVisitor
             // 
@@ -116,9 +117,9 @@
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(559, 421);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtEGN);
+            this.Controls.Add(this.txtBarcode);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -135,9 +136,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.TextBox txtEGN;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnAdd;
     }
 }

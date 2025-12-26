@@ -116,9 +116,9 @@
     <Compile Include="Book Forms\EditBook.Designer.cs">
       <DependentUpon>EditBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="GlobalData.cs" />
+    <Compile Include="Helper Classes\GlobalData.cs" />
     <Compile Include="Models\Book.cs" />
-    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="Helper Classes\DatabaseHelper.cs" />
     <Compile Include="Loan Forms\AddLoan.cs">
       <SubType>Form</SubType>
     </Compile>

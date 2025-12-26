@@ -158,6 +158,7 @@
             // 
             // cmbSelectBook
             // 
+            this.cmbSelectBook.BackColor = System.Drawing.Color.Snow;
             this.cmbSelectBook.FormattingEnabled = true;
             this.cmbSelectBook.Location = new System.Drawing.Point(217, 49);
             this.cmbSelectBook.Name = "cmbSelectBook";
