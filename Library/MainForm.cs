@@ -1,5 +1,6 @@
 ﻿using Library.Book_Forms;
 using Library.Loan_Forms;
+using Library.Query_Forms;
 using Library.Visitor_Forms;
 using System;
 using System.Collections.Generic;
@@ -90,6 +91,24 @@ namespace Library
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOverdue_Click(object sender, EventArgs e)
+        {
+            OverdueBooksForm overdueBooksForm = new OverdueBooksForm();
+            overdueBooksForm.ShowDialog();
+        }
+
+        private void btnCharts_Click(object sender, EventArgs e)
+        {
+            ChartsForm chartsForm = new ChartsForm();
+            chartsForm.ShowDialog();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchForm searchForm = new SearchForm();
+            searchForm.ShowDialog();
         }
     }
 }
